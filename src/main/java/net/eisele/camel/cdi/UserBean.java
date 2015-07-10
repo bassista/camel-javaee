@@ -12,13 +12,12 @@ import javax.inject.Named;
 @Named
 public class UserBean {
 
+    private String name;
+
     @Inject
     HelloCamel helloCamel;
 
-    private String name;
-
     public String getName() {
-
         return helloCamel.doSomeWorkFor("JSF");
     }
 
